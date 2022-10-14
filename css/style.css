@@ -1,0 +1,311 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  
+  --green-color:#03623b;
+  --pink-color:rgb(204 77 167);
+  --pink-light:rgb(235 115 150);
+}
+html{
+  scroll-behavior: smooth;
+}
+  body {
+    
+    font-family: "Roboto", sans-serif;
+    user-select: none;
+  }
+  nav{
+    width: 100%;
+    background-color: #F6FBF4;
+    z-index: 1000;
+    box-shadow: 0px 5px 18px #888888;
+  }
+
+.nav-img{
+  width: 60px;
+}
+.navbar-brand{
+  display: block;
+  margin-right: 50% !important;
+}
+.nav-item{
+  width: fit-content;
+  margin-right: 15px;
+  margin-top: 15px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2px 10px;
+  background-color: var(--green-color);
+}
+.navbar-nav a{
+  color: white !important;
+  font-weight: 600;
+}
+
+.navbar .navbar-toggler {
+  color: var(--blue);
+  font-size: 25px;
+  border-color: white;
+}
+.navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+  border-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.land{
+  overflow: hidden;
+  min-height: 100vh;
+}
+.land .land-text{
+  margin-top: 20%;
+}
+.land .land-head{
+  font-size: 4em;
+  display: inline-block !important;
+}
+.Starbucks ,.green{
+  font-weight: 600;
+  color: var(--green-color) !important;
+}
+.pink{
+  font-weight: 600;
+  color: var(--pink-color) !important;
+}
+
+.pink-light{
+  font-weight: 600;
+  color: var(--pink-light) !important;
+}
+.btn1{
+  margin-top: 35px !important;
+  background-color: var(--green-color);
+  color: white;
+  padding: 5px 30px;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: fit-content;
+  font-weight: 600;
+
+}
+
+.land-image{
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.land-image img{
+  
+  width: 250px;
+  animation: move  infinite ease-in-out alternate;
+  animation-duration: 1.2s;
+  animation-delay: 0s;
+}
+@keyframes move { 
+
+50%{
+  transform: translate(0% ,0%);
+}
+100%{
+  transform: translate(10% ,-10%);
+}
+
+  
+}
+.buttons{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.buttons-image{
+  cursor: pointer;
+  margin-right: 20px;
+  width: 80px;
+  transition: .3s;
+}
+.buttons-image:hover{
+  transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+.shop{
+  background-color: #eeeeee;
+  padding: 30px 0;
+}
+.shop-text p{
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.card-image{
+  margin: auto;
+  width: 90px;
+  transform: translateY(35%);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.app{
+  background-color: #eeeeee;
+  padding: 30px 0;
+}
+
+
+
+
+
+
+
+
+.about{
+  padding: 50px 0;
+  background-color: #a08c8c;
+}
+
+
+
+
+
+
+.shop-text h1{
+  color: var(--green-color);
+  font-weight: 700;
+}
+.card-text{
+  background-color: var(--green-color);
+  color: white;
+  border-radius: 10px;
+  padding: 100px 10px 10px;
+}
+.shop-btn{
+  display: block;
+  margin: auto !important;
+  width: fit-content;
+  cursor: pointer;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background-color: var(--green-color);
+  color: white;
+  border: 1px solid white;
+  font-weight: 500;
+  transition: .3s;
+}
+.shop-btn:hover{
+  background-color: white;
+  color: var(--green-color);
+}
+
+
+
+
+
+
+
+
+
+
+.delivery-image{
+  border-radius: 10px;
+}
+.delivery-image img{
+  border-radius: 10px;
+}
+.deliver-btn{
+  font-weight: 500;
+  display: block;
+  padding: 10px 50px;
+  background-color: transparent;
+  color: black;
+  border-radius: 30px;
+  transition: .3s;
+  border: 3px solid black;
+}
+.deliver-btn:hover{
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+.icons{
+  width: fit-content;
+  margin: auto !important;
+}
+.icons .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+  font-size: 1.5em;
+  background-color: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.contact-text{
+  width: fit-content;
+  margin: auto !important;
+}
+@media (max-width:399px) {
+  .contact-text p{
+    font-size: 1em !important;
+    margin-right: 10px;
+  }
+}
+.contact-text p{
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.foot{
+  width: fit-content;
+  margin: auto;
+  font-weight: 500;
+}
